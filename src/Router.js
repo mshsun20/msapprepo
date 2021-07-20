@@ -1,9 +1,19 @@
 import React from 'react'
+import { Route, Switch } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Home from './components/Home'
 
 const Router = () => {
     return (
         <>
-        <div>Welcome to Sunny React App.</div>
+        <Navbar />
+
+        <Switch>
+            <Route path='/' component={Home} />
+        </Switch>
+
+        <Footer />
         </>
     )
 }
