@@ -3,6 +3,8 @@ import { Route, Switch } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './components/Home'
+import About from './components/About'
+import Contact from './components/Contact'
 
 const Router = () => {
     return (
@@ -10,7 +12,9 @@ const Router = () => {
         <Navbar />
 
         <Switch>
-            <Route path='/' component={Home} />
+            <Route exact path='/' component={Home} />
+            <Route path='/about' components={About} />
+            <Route path='/contact' components={Contact} />
         </Switch>
 
         <Footer />
