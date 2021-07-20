@@ -13,8 +13,8 @@ const Router = () => {
 
         <Switch>
             <Route exact path='/' component={Home} />
-            <Route path='/about' components={About} />
-            <Route path='/contact' components={Contact} />
+            <Route path='/about' component={About} />
+            <Route path='/contact' component={Contact} />
         </Switch>
 
         <Footer />
