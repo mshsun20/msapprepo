@@ -1,0 +1,15 @@
+@import 'myvar';
+
+
+@mixin cmmnflx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // justify-items: center;
+}
+
+@mixin cmmngrd {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
