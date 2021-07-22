@@ -51,10 +51,10 @@ const Navbar = () => {
             </div>
             <div className={ menuState ? "mobile-navgrp" : "nonavmnu" }>
                 <div className="mb-navmnu">
-                    <NavLink className="nvlnk" to='/'><Button className="nvbtn">Home</Button></NavLink>
-                    <NavLink className="nvlnk" to='#'><Button className="nvbtn">Services</Button></NavLink>
-                    <NavLink className="nvlnk" to='/about'><Button className="nvbtn">AboutUS</Button></NavLink>
-                    <NavLink className="nvlnk" to='/contact'><Button className="nvbtn">ContactUS</Button></NavLink>
+                    <NavLink className="nvlnk" to='/' onClick={() => setmenuState(!menuState)}><Button className="nvbtn">Home</Button></NavLink>
+                    <NavLink className="nvlnk" to='#' onClick={() => setmenuState(!menuState)}><Button className="nvbtn">Services</Button></NavLink>
+                    <NavLink className="nvlnk" to='/about' onClick={() => setmenuState(!menuState)}><Button className="nvbtn">AboutUS</Button></NavLink>
+                    <NavLink className="nvlnk" to='/contact' onClick={() => setmenuState(!menuState)}><Button className="nvbtn">ContactUS</Button></NavLink>
                 </div>
             </div>
         </div>
