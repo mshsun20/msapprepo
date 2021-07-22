@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import Button from '@material-ui/core/Button'
 import MenuIcon from '@material-ui/icons/Menu'
@@ -7,20 +7,20 @@ import TwitterIcon from '@material-ui/icons/Twitter'
 import InstagramIcon from '@material-ui/icons/Instagram'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 
-export var mnustat = 'FALSE'
+// export var mnustat = 'FALSE'
 
 const Navbar = () => {
     const [menuState, setmenuState] = useState(false)
 
-    const chngmnustat = () => {
-        setmenuState(!menuState)
-        if (menuState) {
-            mnustat = 'TRUE'
-        }
-        else {
-            mnustat = 'FALSE'
-        }
-    }
+    // const chngmnustat = () => {
+    //     setmenuState(!menuState)
+    //     if (menuState) {
+    //         mnustat = 'TRUE'
+    //     }
+    //     else {
+    //         mnustat = 'FALSE'
+    //     }
+    // }
 
     // useEffect(() => {
     //     chngmnustat()
@@ -40,7 +40,7 @@ const Navbar = () => {
                         <NavLink className="nvlnk" to='/about'><Button>AboutUS</Button></NavLink>
                         <NavLink className="nvlnk" to='/contact'><Button>ContactUS</Button></NavLink>
                     </div>
-                    <div className="hmbrgmnu" onClick={chngmnustat}><MenuIcon /></div>
+                    <div className="hmbrgmnu" onClick={() => setmenuState(!menuState)}><MenuIcon /></div>
                 </div>
                 <div className='navsocm'>
                     <a href="https://www.facebook.com/mshsunny/" rel="noreferrer" target="_blank"><FacebookIcon className='nvsclnk' /></a>

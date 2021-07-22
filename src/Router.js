@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import Navbar, { mnustat } from './components/Navbar'
+import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './components/Home'
 import About from './components/About'
@@ -8,14 +8,14 @@ import Contact from './components/Contact'
 
 const Router = () => {
     // if (vlu == 0) {}
-    console.log(mnustat)
+    // console.log(mnustat)
 
     return (
         <>
         <Navbar />
 
         <Switch>
-            <div className={(mnustat === 'TRUE') ? "mobile-apbdy" : "apbdy"}>
+            <div className="apbdy">
                 <Route exact path='/' component={Home} />
                 <Route path='/about' component={About} />
                 <Route path='/contact' component={Contact} />
