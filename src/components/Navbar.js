@@ -22,9 +22,9 @@ const Navbar = () => {
         }
     }
 
-    useEffect(() => {
-        chngmnustat()
-    }, [])
+    // useEffect(() => {
+    //     chngmnustat()
+    // }, [])
 
     return (
         <>
