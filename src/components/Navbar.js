@@ -24,7 +24,7 @@ const Navbar = () => {
                         <NavLink className="nvlnk" to='/about'><Button className="nvbtn">AboutUS</Button></NavLink>
                         <NavLink className="nvlnk" to='/contact'><Button className="nvbtn">ContactUS</Button></NavLink>
                     </div>
-                    <div className="hmbrgmnu" onClick={() => setmenuState(!menuState)}><MenuIcon /></div>
+                    <div className="hmbrgmnu"><MenuIcon className="hmbrgicn" onClick={() => setmenuState(!menuState)} /></div>
                 </div>
                 <div className='navsocm'>
                     <a href="https://www.facebook.com/mshsunny/" rel="noreferrer" target="_blank"><FacebookIcon className='nvsclnk' style={{color: '#1778F2' }} /></a>

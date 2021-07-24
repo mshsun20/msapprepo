@@ -4,9 +4,9 @@
 
 
 .apbdy {
-    position: static;
+    position: sticky;
     float: left;
-    background-color: lighten($shcl9, 20%);
+    // background-color: lighten($shcl9, 20%);
     width: 100%;
     height: auto;
     min-height: 500px;
@@ -128,16 +128,8 @@
 
 @media (max-width: 768px) {
 
-    .mobile-apbdy {
-        position: sticky;
-        float: left;
-        background-color: lighten($shcl9, 20%);
-        width: 100%;
-        height: auto;
-        min-height: 500px;
-        margin-top: 200px;
-        margin-bottom: 50px;
-        z-index: -1;
+    .apbdy {
+        padding: 120px 20px 50px 20px;
     }
 
     // Navbar.js responsive styles
@@ -170,6 +162,9 @@
         .hmbrgmnu {
             @include cmmnflx;
             width: 100%;
+            .hmbrgicn {
+                cursor: pointer;
+            }
         }
     }
 
