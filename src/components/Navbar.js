@@ -7,24 +7,8 @@ import TwitterIcon from '@material-ui/icons/Twitter'
 import InstagramIcon from '@material-ui/icons/Instagram'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 
-// export var mnustat = 'FALSE'
-
 const Navbar = () => {
     const [menuState, setmenuState] = useState(false)
-
-    // const chngmnustat = () => {
-    //     setmenuState(!menuState)
-    //     if (menuState) {
-    //         mnustat = 'TRUE'
-    //     }
-    //     else {
-    //         mnustat = 'FALSE'
-    //     }
-    // }
-
-    // useEffect(() => {
-    //     chngmnustat()
-    // }, [])
 
     return (
         <>
@@ -43,10 +27,10 @@ const Navbar = () => {
                     <div className="hmbrgmnu" onClick={() => setmenuState(!menuState)}><MenuIcon /></div>
                 </div>
                 <div className='navsocm'>
-                    <a href="https://www.facebook.com/mshsunny/" rel="noreferrer" target="_blank"><FacebookIcon className='nvsclnk' /></a>
-                    <a href="https://twitter.com/mshsun20" rel="noreferrer" target="_blank"><TwitterIcon className='nvsclnk' /></a>
-                    <a href="https://www.instagram.com/legendsunny65/" rel="noreferrer" target="_blank"><InstagramIcon className='nvsclnk' /></a>
-                    <a href="https://www.linkedin.com/in/mriganka-halder-5347679a/" rel="noreferrer" target="_blank"><LinkedInIcon className='nvsclnk' /></a>
+                    <a href="https://www.facebook.com/mshsunny/" rel="noreferrer" target="_blank"><FacebookIcon className='nvsclnk' style={{color: '#1778F2' }} /></a>
+                    <a href="https://twitter.com/mshsun20" rel="noreferrer" target="_blank"><TwitterIcon className='nvsclnk' style={{color: '#1DA1F2' }} /></a>
+                    <a href="https://www.instagram.com/legendsunny65/" rel="noreferrer" target="_blank"><InstagramIcon className='nvsclnk' style={{color: '#F44747' }} /></a>
+                    <a href="https://www.linkedin.com/in/mriganka-halder-5347679a/" rel="noreferrer" target="_blank"><LinkedInIcon className='nvsclnk' style={{color: '#0077B5' }} /></a>
                 </div>
             </div>
             <div className={ menuState ? "mobile-navgrp" : "nonavmnu" }>
