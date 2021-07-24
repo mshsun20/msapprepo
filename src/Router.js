@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './components/Home'
+import Todo from './components/services/Todo'
 import About from './components/About'
 import Contact from './components/Contact'
 
@@ -17,6 +18,7 @@ const Router = () => {
         <Switch>
             <div className="apbdy">
                 <Route exact path='/' component={Home} />
+                <Route path='/todo' component={Todo} />
                 <Route path='/about' component={About} />
                 <Route path='/contact' component={Contact} />
             </div>
